@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>TP.Domain</RootNamespace>
+    <AssemblyName>TP.Domain</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\**" />
+    <Compile Remove="Enums\**" />
+    <Compile Remove="Events\**" />
+    <Compile Remove="Statements\**" />
+    <Compile Remove="ValueObjects\**" />
+    <EmbeddedResource Remove="Entities\**" />
+    <EmbeddedResource Remove="Enums\**" />
+    <EmbeddedResource Remove="Events\**" />
+    <EmbeddedResource Remove="Statements\**" />
+    <EmbeddedResource Remove="ValueObjects\**" />
+    <None Remove="Entities\**" />
+    <None Remove="Enums\**" />
+    <None Remove="Events\**" />
+    <None Remove="Statements\**" />
+    <None Remove="ValueObjects\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="UserSettings\AppUserSetting.cs" />
+    <Compile Remove="UserSettings\UserSetting.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <PackageReference Include="MongoDB.Driver" />
+    <PackageReference Include="Newtonsoft.Json" />
+  </ItemGroup>
+
+</Project>
